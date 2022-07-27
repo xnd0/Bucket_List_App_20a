@@ -30,7 +30,7 @@ function Bucket(props) {
     // use a ternary operator
     <div className={ item.isComplete
       ? `bucket-row complete ${item.eagerness}`
-      : `bucket-row ${item.eagerness}` } key={i}>
+      : `bucket-row ${item.eagerness}` } key={index}>
 
       {/* Add an onClick event that invokes the `completeBucketItem` method passing the item id as a argument */}
       <div key={item.id} onClick={() => props.completeBucketItem(item.id)}>
