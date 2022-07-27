@@ -35,7 +35,7 @@ function Bucket(props) {
       {/* Add an onClick event that invokes the `completeBucketItem` method passing the item id as a argument */}
       <div key={item.id} onClick={() => props.completeBucketItem(item.id)}>
           {/* Add the item text here */}
-          {item.id}
+          {item.text}
       </div>
       <div className="icons">
         {/* // Add an onClick event update the `edit` object with the `id`, `value`, and `eagerness` properties */}
