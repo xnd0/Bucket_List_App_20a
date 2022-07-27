@@ -8,7 +8,23 @@ function BucketList() {
   // Function to add a bucket list item
   const addBucketItem = (item) => {
 
-    // TODO: Write logic to add the new bucket item to the bucket state variable
+    // Logic to add the new bucket item to the bucket state variable
+
+    console.log(
+      '🚀 ~ file: BucketList.js ~ line 10 ~ addBucketItem ~ item',
+      item
+    );
+    // Check to see if the item text is empty
+    if (!item.text) {
+      return;
+    }
+
+    // Add the new bucket list item to the existing array of objects
+    const newBucket = [item, ...bucket];
+    console.log(newBucket);
+
+    // Call setBucket to update state with our new set of bucket list items
+    setBucket(newBucket);
     
   };
 
